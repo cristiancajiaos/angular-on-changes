@@ -1,1 +1,12 @@
-<p>layout works!</p>
+<div class="row">
+  <div class="col-md-4">
+    <button class="btn btn-success" (click)="changeFromParent()">
+      Change from parent
+    </button>
+
+    <p>data: {{data}}</p>
+  </div>
+  <div class="col-md-8">
+    <app-child [parentData]="data"></app-child>
+  </div>
+</div>
